@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Current time in different time zones</h1>
+{% for data in time_data %}
+<p>Current time in {{ data.time_zone }}: {{ data.current_time }}</p>
+{% endfor %}
+</body>
+</html>
